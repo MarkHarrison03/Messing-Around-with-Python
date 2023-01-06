@@ -1,0 +1,42 @@
+def removeChars(string, numOfChars):
+    return string[numOfChars:]
+
+
+def listElementsTheSame(list1):
+    if list1[0] == list1[len(list1) - 1]:
+        return True
+    else:
+        return False
+
+
+def findDivisorsOfFive(integerList):
+    integer_list2 = []
+    for x in integerList:
+        if x % 5 == 0:
+            integer_list2.append(x)
+
+    for y in integer_list2:
+        print(y)
+
+
+def howManyAppearances(string1, string2):
+    return string1.count(string2)
+
+
+def printPattern():
+    i = 1
+    while i < 6:
+        j = 0
+        s = ""
+        while j < i:
+            s += str(i) + " "
+            j += 1
+
+        print(s)
+        i += 1
+
+print(removeChars("pynative", 4))
+print(listElementsTheSame([1, 2, 3, 4, 5, 1]))
+print(findDivisorsOfFive([1, 5, 15, 25, 34, 90]))
+print(howManyAppearances("Hello!", "l"))
+print(printPattern())
