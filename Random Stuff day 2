@@ -1,0 +1,30 @@
+import sys
+import datetime
+from math import pi
+
+# print python version
+print(sys.version)
+# print time
+print(datetime.datetime.now())
+# print pi
+print(pi)
+
+# print inputted names
+firstname = (input("Enter first name"))
+lastname = input("enter last name")
+print(lastname + " " + firstname)
+# print extension of a file
+filename = input("enter filename")
+f_name = filename.split(".")
+print("Extension = " + repr(f_name[-1]))
+
+# lowest common multiple
+number1 = int(input("Enter number 1"))
+number2 = int(input("Enter number 2"))
+
+range1 = range(2, number1)
+for x in range1:
+    if number1 % x == 0:
+        if number2 % x == 0:
+            print(str(x))
+            break
