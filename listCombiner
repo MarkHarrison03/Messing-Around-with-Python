@@ -1,0 +1,12 @@
+#adds only odd numbers from list1 and even numbers from list2 into a third list
+list1 = list(input("Enter a list"))
+list2 = list(input("Enter second list"))
+list3 = []
+for x in list1:
+    if int(x)%2 == 1:
+        list3.append(x)
+for y in list2:
+    if int(y)%2 == 0:
+        list3.append(y)
+
+print(list3)
