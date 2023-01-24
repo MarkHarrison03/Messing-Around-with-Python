@@ -1,0 +1,16 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        if x < 0:
+            return False
+        elif x < 10:
+            return True
+
+        text = str(x)
+        if text[::-1] == text:
+            return True
+        else:
+            return False 
